@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical"
+        android:contentDescription="@string/ViewCamera">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:id="@+id/cameraImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+            <ImageButton
+                android:id="@+id/forwardBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward_icon"
+                android:contentDescription="@string/backwardBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="140dp"
+                android:layout_weight="1"
+                android:padding="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp">
+        <ImageButton
+            android:id="@+id/leftBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/leftBtn"
+            android:src="@drawable/left_icon"
+            android:layout_weight="1"
+            android:padding="5dp"
+            />
+        <ImageButton
+            android:id="@+id/stopBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/stopBtn"
+            android:src="@drawable/circle_icon"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+        <ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/leftBtn"
+            android:src="@drawable/right_icon"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backwardBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backward_icon"
+            android:contentDescription="@string/backwardBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="140dp"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:id="@+id/textSpeed"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="@string/textSpeed"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/speedseekBar"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/textSpeed"
+            android:src="@drawable/speed_icon"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp">
+        <TextView
+            android:id="@+id/textLight"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="@string/textLight"
+            android:textSize="20sp"
+            android:textColor="@color/red"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/lightseekBar"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/textLight"
+            android:src="@drawable/light_icon"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

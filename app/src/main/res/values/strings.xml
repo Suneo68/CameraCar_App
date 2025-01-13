@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarApp</string>
+    <string name="forwardBtn">Nút tiến</string>
+    <string name="backwardBtn">Nút lùi</string>
+    <string name="leftBtn">Nút sang trái</string>
+    <string name="rightBtn">Nút sang phải</string>
+    <string name="stopBtn">Dừng lại</string>
+    <string name="textSpeed">Tốc độ</string>
+    <string name="textLight">Độ sáng</string>
+    <string name="ViewCamera">Khung Camera</string>
+</resources>
