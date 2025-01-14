@@ -29,6 +29,7 @@
             android:id="@+id/cameraImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/ViewCamera"
             />
     </LinearLayout>
     <LinearLayout
@@ -36,12 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp">
 
-            <ImageButton
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/forwardBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/forward_icon"
-                android:contentDescription="@string/backwardBtn"
+                android:contentDescription="@string/forwardBtn"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginHorizontal="140dp"
                 android:layout_weight="1"
@@ -52,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp">
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/leftBtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -61,7 +62,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             />
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/stopBtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -69,12 +70,12 @@
             android:src="@drawable/circle_icon"
             android:layout_weight="1"
             android:padding="5dp"/>
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/rightBtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:contentDescription="@string/leftBtn"
+            android:contentDescription="@string/rightBtn"
             android:src="@drawable/right_icon"
             android:padding="5dp"
             />
@@ -83,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/backwardBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

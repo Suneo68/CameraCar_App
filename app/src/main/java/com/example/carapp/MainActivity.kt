@@ -9,16 +9,17 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatImageButton
 import okhttp3.*
 import okio.ByteString
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var upButton: Button
-    private lateinit var downButton: Button
-    private lateinit var leftButton: Button
-    private lateinit var rightButton: Button
-    private lateinit var stopButton: Button
+    private lateinit var upButton: AppCompatImageButton
+    private lateinit var downButton: AppCompatImageButton
+    private lateinit var leftButton: AppCompatImageButton
+    private lateinit var rightButton: AppCompatImageButton
+    private lateinit var stopButton: AppCompatImageButton
     private lateinit var speedSeekBar: SeekBar
     private lateinit var lightSeekBar: SeekBar
     private lateinit var cameraImage: ImageView
